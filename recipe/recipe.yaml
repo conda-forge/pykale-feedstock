@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.2.0"
+  version: 0.2.1
 
 package:
   name: pykale
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/pykale/pykale-${{ version }}.tar.gz
-  sha256: 0e4cb9238bee4c8e94a6ff562c4bac6bd47a1666a9db562bb687b5a0c5493f37
+  sha256: 1f19b231d0822c393bb92aa460e0cacd42b8b2ce536a0cf08fcc69339e10ce7a
 
 build:
   number: 0
@@ -33,15 +33,15 @@ requirements:
     - tensorly >=0.5.1
     - pytorch <=2.6.0
     - torchvision >=0.12.0
-
+    - pooch >=1.8.0
 tests:
   - python:
       imports:
         - kale
       pip_check: true
-      python_version: 
+      python_version:
         - ${{ python_min }}.*
-        - "*"
+        - '*'
 
 about:
   summary: Knowledge-aware machine learning from multiple sources in Python

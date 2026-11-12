@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: 0.2.1
+  version: "0.2.2"
 
 package:
   name: pykale
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/pykale/pykale-${{ version }}.tar.gz
-  sha256: 1f19b231d0822c393bb92aa460e0cacd42b8b2ce536a0cf08fcc69339e10ce7a
+  sha256: 76016e09633d47fd21fc35a590ea41c06383f07f99576aa34bb6721a82bc4dd0
 
 build:
   number: 0
